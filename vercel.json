@@ -1,5 +1,8 @@
 {
   "version": 2,
+  "buildCommand": "vite build",
+  "outputDirectory": "build",
+  "installCommand": "pnpm i",
   "builds": [
     {
       "src": "./build/index.js",
@@ -9,7 +12,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/"
+      "dest": "build/index.js"
     }
   ]
 }
