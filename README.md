@@ -1,7 +1,7 @@
 
 # sk-node-ws-demo
 
-sveltekit + adapter-node + sock.io
+sveltekit + adapter-node + socket.io
 
 ### A demo for test websocket with node
 
