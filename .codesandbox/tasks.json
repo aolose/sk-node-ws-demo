@@ -6,7 +6,7 @@
       "name":"Build Workspace",
       "command":"pnpm run build"
     },
-    "run-prod": {
+    "prod": {
       "name": "Run Prod Server",
       "command": "pnpm run prod",
       "runAtStart": true,
