@@ -1,0 +1,19 @@
+{
+  "$schema": "https://codesandbox.io/schemas/tasks.json",
+  "setupTasks": ["pnpm i", "pnpm run build"],
+  "tasks": {
+    "build":{
+      "name":"Build Workspace",
+      "command":"pnpm run build"
+    },
+    "run-prod": {
+      "name": "Run Prod Server",
+      "command": "pnpm run prod",
+      "runAtStart": true,
+      "preview": {
+        "port": 3000 ,
+        "prLink": "direct"
+      }
+    }
+  }
+}
