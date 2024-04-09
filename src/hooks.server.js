@@ -8,4 +8,4 @@ useServer((server) => {
             ws.emit('echo', `echo: ${e}`)
         })
     })
-})
+},(path)=>/socket\.io|hello/.test(path))

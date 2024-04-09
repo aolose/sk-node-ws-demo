@@ -35,8 +35,8 @@ devDependencies:
     specifier: ^5.0.3
     version: 5.2.7
   vite-sveltekit-node-ws:
-    specifier: ^0.0.3
-    version: 0.0.3
+    specifier: ^0.0.5
+    version: 0.0.5
 
 packages:
 
@@ -1475,8 +1475,8 @@ packages:
     engines: {node: '>= 0.8'}
     dev: false
 
-  /vite-sveltekit-node-ws@0.0.3:
-    resolution: {integrity: sha512-V8eW0W/Ts4g07vbPynqyFcq6N/bFAl1ZTJiCjM7p1zWUl/HITI3SVDuXNdTWIHvoFVihFzFrxR4Or9vli/FVmg==}
+  /vite-sveltekit-node-ws@0.0.5:
+    resolution: {integrity: sha512-LX5CSnSuGP7JJknxknmhYaAsQZo56FXIdHoTYcSGPpT/KhFNm4YFG+AW5W3Vbq1Wb21QHZbygy1n8SZO9jUOsA==}
     dev: true
 
   /vite@5.2.7:
