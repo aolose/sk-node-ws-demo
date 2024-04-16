@@ -35,7 +35,7 @@
     }
     onMount(connect)
 </script>
-<h1>Sveltekit Cloudflare Websocket Test1</h1>
+<h1>Sveltekit Node Websocket Test</h1>
 <div>
     <button on:click={send}>Press Enter to send</button>
     <input bind:value={value} on:keydown={send}>
