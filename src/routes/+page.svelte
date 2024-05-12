@@ -10,8 +10,7 @@
     let status = 'disconnect'
     /**@type {import('socket.io-client').Socket} */
     let socket
-    let stat
-    /**@param e {InputEvent}*/
+    /**@param e {KeyboardEvent}*/
     let send = function (e) {
         if (!value || status !== 'connected' || e.type === 'keydown' && e.key !== 'Enter') return
         socket.emit('hello', value)
