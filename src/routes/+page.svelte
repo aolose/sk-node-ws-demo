@@ -8,12 +8,11 @@
     /**@type {import('socket.io-client').Socket} */
     let socket
     let stat
-    /**@param e {InputEvent|MouseEvent}*/
+    /**@param e {InputEvent}*/
     let send = function (e) {
         if (!value || status !== 'connected' || e.type === 'keydown' && e.key !== 'Enter') return
         socket.emit('hello', value)
         value = ''
-        e.target?.nextElementSibling.focus()
     }
 
     const connect = () => {
@@ -27,7 +26,7 @@
             status = 'disconnect'
         })
         socket.on('echo', (data) => {
-            message = `${new Date().toLocaleTimeString()} ${data}\n` + message
+            message = `[${new Date().toLocaleTimeString()}] ${data}\n` + message
         })
         return () => {
             socket.disconnect()
@@ -37,8 +36,8 @@
 </script>
 <h1>Sveltekit Node Websocket Test</h1>
 <div>
-    <button on:click={send}>Press Enter to send</button>
-    <input bind:value={value} on:keydown={send}>
+    <button on:click={()=>window.open('/')}>Add a new user</button>
+    <input bind:value={value} placeholder="Press Enter to send" on:keydown={send}>
 </div>
 <div class="msg">
     <pre>{`Client Status:[${status}]\n${message}`}</pre>
